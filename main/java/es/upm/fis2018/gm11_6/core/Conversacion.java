@@ -1,5 +1,3 @@
-package es.upm.fis2018.gm11_6.core;
-
 import java.util.ArrayList;
 
 //
@@ -43,18 +41,17 @@ public class Conversacion {
 		System.out.println("Mensaje enviado.");
 	}
 	//borrar mensaje
-	public void borrarMensaje(int idM, Usuario em) {
+	public boolean borrarMensaje(int idM, Usuario em) {
 		this.mostrarMensajes();
 		if (this.listaMensajes.get(idM).getEmisor().getNombre().equals(em.getNombre())){
 			this.listaMensajes.remove(idM);
 			System.out.println("Mensaje borrado");
-		} else System.out.println("No puedes borrar un mensaje que no es tuyo");
+			return true;
+		} else{
+			System.out.println("No puedes borrar un mensaje que no es tuyo");
+			return false;
+		}
 	}
-	
-	
-	
-	
-	
 	// getters and setters
 	public int getIdConversacion() {
 		return idConversacion;
