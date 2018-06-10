@@ -1,5 +1,3 @@
-package es.upm.fis2018.gm11_6.core;
-
 import java.util.ArrayList;
 
 //
@@ -54,11 +52,6 @@ public class Conversacion {
 			return false;
 		}
 	}
-	
-	
-	
-	
-	
 	// getters and setters
 	public int getIdConversacion() {
 		return idConversacion;

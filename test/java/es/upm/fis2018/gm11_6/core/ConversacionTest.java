@@ -1,6 +1,3 @@
-package es.upm.fis2018.gm11_6.core;
-
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
